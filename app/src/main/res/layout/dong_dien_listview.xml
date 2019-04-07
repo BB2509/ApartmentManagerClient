@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_weight="9">
+
+        <TextView
+            android:textSize="10dp"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:text="Ngày:" />
+
+        <TextView
+            android:id="@+id/textngay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Ngày:"
+            android:textColor="@color/colorText"
+            android:textSize="10dp" />
+        <TextView
+            android:textSize="10dp"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:text="số tháng trước:" />
+
+
+        <TextView
+            android:id="@+id/textthangtruoc"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="so thang truoc:"
+            android:textColor="@color/colorText"
+            android:textSize="10dp" />
+        <TextView
+            android:textSize="10dp"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:text="số tháng sau:" />
+
+
+        <TextView
+            android:id="@+id/textthangsau"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="So thang sau:"
+            android:textColor="@color/colorText"
+            android:textSize="10dp" />
+        <TextView
+            android:textSize="10dp"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:text="thành tiền:" />
+
+        <TextView
+            android:id="@+id/texttongtien"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Tong tien:"
+            android:textColor="@color/colorText"
+            android:textSize="10dp" />
+
+
+        <TextView
+            android:id="@+id/textstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Tinh trang:"
+            android:textColor="@color/colorText"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+</LinearLayout>

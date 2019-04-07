@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbartiendien"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                app:title="Thanh toán tiền điện"
+                app:titleTextColor="@color/colorText">
+
+            </android.support.v7.widget.Toolbar>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp">
+                    <TextView
+                        android:text="Ngày :"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/ngaygannhat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:text="Ngày" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp">
+                    <TextView
+                        android:text="Số điện tháng trước :"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/sodienthangtruoc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:text="so dien thang truoc" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp">
+                    <TextView
+                        android:text="Số điện tháng sau :"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/sodienthangsau"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:text="so dien thang truoc" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp">
+                    <TextView
+                        android:text="Thành Tiền :"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/thanhtien"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:text="so dien thang truoc" />
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:text="VNĐ"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp">
+                    <TextView
+                        android:text="Tình Trạng :"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/tinhtrangthanhtoan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:text="so dien thang truoc" />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:text="Thanh Toán"
+                    android:id="@+id/btnthanhtoan"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text=" Bảng Điện Chi Tiết  "
+                    android:textColor="@color/colorText"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ListView
+                    android:id="@+id/listtiendien"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </ListView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>
